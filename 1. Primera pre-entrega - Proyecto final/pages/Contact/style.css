@@ -1,0 +1,107 @@
+/* Fuente Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Eliminar las reglas CSS por defecto de los navegadores */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    /* Box modeling */
+    margin: 0;
+    padding: 0;
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #176B87;
+}
+
+header {
+    /* display config */
+    display: flex;
+    flex-direction: row;
+    /* Box modeling */
+    padding: 20px auto;
+    /* width: 100%; */
+    /* Colors */
+    background: #1B1D34;
+}
+
+
+/* Logo */
+.logo img {
+    width: 7.5rem;
+    height: 7.5rem;
+    flex-shrink: 0;
+}
+
+/* Navbar composition */
+.navComposition {
+    width: 100%;
+}
+
+.mainTitle h1 {
+    margin: 20px 20px 20px 200px;
+    color: #ffffff;
+}
+
+.topNav {
+    /* display */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* Box Modeling */
+    width: 100%;
+    border-bottom: 5px solid #ffffff;
+}
+
+.socialmedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.socialMedia img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+nav {
+    margin: 20px auto;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin-top: 5px;
+}
+
+nav a {
+    margin: 5em 0.75em 0.75em 0.75em;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    text-transform: none;
+    transition: 0.25s ease;
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+}
+
+
+main {
+    flex: 1;
+    /* Es igual a flex-grow: 1; */
+}
+
+footer {
+    background-color: #1B1D34;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}

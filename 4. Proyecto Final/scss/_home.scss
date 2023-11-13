@@ -1,0 +1,103 @@
+/* Fuente Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+//Varibles
+$color-mainbackground: #011640;
+$color-secondarybackground: #010D26;
+$color-titlebackground: #F26938;
+
+// Mixin
+@mixin borderRadiusCreatorPadding($radiosBorder, $paddingBorder) {
+    border-radius: $radiosBorder;
+    padding: $paddingBorder;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoMain {
+    margin: 10px auto;
+    background-color: $color-secondarybackground;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+    color: #fff;
+
+    @include borderRadiusCreatorPadding(10px, 5px);
+
+    .infoTitle {
+        margin: 2px;
+        background-color: $color-titlebackground;
+        text-align: center;
+
+        @include borderRadiusCreatorPadding(10px, 5px);
+
+        p {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: larger;
+        }
+    }
+}
+
+aside {
+    background-color: $color-secondarybackground;
+    padding: 5px;
+}
+
+.active {
+    border-bottom: 5px solid white;
+}
+
+.infoGames {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.75);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 10px;
+
+    @include borderRadiusCreatorPadding(20px, 10px);
+
+    .titleSide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F26938;
+        border-radius: 500px;
+        width: 90%;
+    }
+
+    span {
+        position: absolute;
+        inset: 5px;
+        border-radius: 16px;
+        background-color: #0c1022;
+        z-index: 1;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        background-image: conic-gradient(transparent, transparent, transparent, #00ccff);
+        animation: animate 4s linear infinite;
+    }
+
+    @keyframes animate {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}

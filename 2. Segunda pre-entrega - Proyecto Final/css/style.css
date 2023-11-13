@@ -1,0 +1,95 @@
+/* Fuente Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #176B87;
+}
+
+header {
+    background: #1B1D34;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #1B1D34;
+}
+
+
+/* Home page */
+
+.navbar {
+    background: #1B1D34;
+    /* border-top: 5px solid #ffffff; */
+}
+
+.navbar-title {
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    margin: 5px;
+}
+
+.active {
+    border-bottom: 5px solid red;
+}
+
+.video,
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleSide {
+    width: 100%;
+    background-color: #D9D9D9;
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+/* Game page */
+.titleCatego {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 165px;
+    background: #D9D9D9;
+    width: 10rem;
+    height: 75px;
+    font-size: 25px;
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+    margin-bottom: 5px;
+}
+
+/* Platform page */
+
+/* Streaming Page */
+.titleStreaming {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    background: #D9D9D9;
+    border-radius: 150px;
+    height: 20px;
+    padding: 40px;
+}
+
+/* Contact Page */
+.textContact {
+    font-size: 40px;
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+}

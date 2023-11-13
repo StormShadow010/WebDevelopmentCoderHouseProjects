@@ -1,0 +1,41 @@
+/* Fuente Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+//Varibles
+$color-mainbackground: #011640;
+$color-secondarybackground: #010D26;
+$color-titlebackground: #F26938;
+
+// Mixin
+@mixin borderRadiusCreatorPadding($radiosBorder, $paddingBorder) {
+    border-radius: $radiosBorder;
+    padding: $paddingBorder;
+}
+
+.containerGames {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gamesContainer {
+    background-color: $color-secondarybackground;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px, rgba(255, 255, 255, 0.35) 0px -2px 6px 0px inset;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 90vh;
+
+
+    .titleContainer {
+        display: inline-block;
+        margin: 5px;
+        background-color: #F26938;
+        text-align: center;
+        color: white;
+        @include borderRadiusCreatorPadding(20px, 10px);
+        font-size: 20px;
+    }
+
+}

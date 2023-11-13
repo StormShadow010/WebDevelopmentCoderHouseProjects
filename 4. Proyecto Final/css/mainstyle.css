@@ -1,0 +1,345 @@
+/* Fuente Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* Fuente Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* Fuente Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* Fuente Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* Fuente Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.viewport-header {
+  position: relative;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.viewport-header a {
+  text-decoration: none;
+}
+.viewport-header h1 {
+  font-family: "Syncopate", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3vw;
+  line-height: 1.2;
+  font-size: 3vw;
+  text-align: center;
+}
+.viewport-header h1 span {
+  display: block;
+  font-size: 10vw;
+  letter-spacing: -1.3vw;
+}
+.viewport-header h1 p {
+  display: block;
+  font-size: 2vw;
+  letter-spacing: 1.3vw;
+}
+.viewport-header h1 .btn {
+  margin-top: 10px;
+  font-weight: 100;
+  font-size: 14px;
+  color: #fff;
+  background-color: #0066CC;
+  padding: 10px 30px;
+  border: solid #0066cc 5px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 50px;
+  transition: 1000ms;
+  transform: translateY(0);
+  cursor: pointer;
+}
+.viewport-header h1 .btn:hover {
+  transition: 1000ms;
+  padding: 10px 60px;
+  transform: translateY(0px);
+  background-color: #fff;
+  color: #000000;
+  border: solid 5px #0066cc;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoMain {
+  margin: 10px auto;
+  background-color: #010D26;
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+  color: #fff;
+  border-radius: 10px;
+  padding: 5px;
+}
+.infoMain .infoTitle {
+  margin: 2px;
+  background-color: #F26938;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+}
+.infoMain .infoTitle p {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: larger;
+}
+
+aside {
+  background-color: #010D26;
+  padding: 5px;
+}
+
+.active {
+  border-bottom: 5px solid white;
+}
+
+.infoGames {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 10px;
+  border-radius: 20px;
+  padding: 10px;
+}
+.infoGames .titleSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F26938;
+  border-radius: 500px;
+  width: 90%;
+}
+.infoGames span {
+  position: absolute;
+  inset: 5px;
+  border-radius: 16px;
+  background-color: #0c1022;
+  z-index: 1;
+}
+.infoGames:before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-image: conic-gradient(transparent, transparent, transparent, #00ccff);
+  animation: animate 4s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.containerGames {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gamesContainer {
+  background-color: #010D26;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px, rgba(255, 255, 255, 0.35) 0px -2px 6px 0px inset;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 90vh;
+}
+.gamesContainer .titleContainer {
+  display: inline-block;
+  margin: 5px;
+  background-color: #F26938;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.platformContainer {
+  background-color: #010D26;
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+  margin: 10px;
+  min-height: 80vh;
+}
+.platformContainer a {
+  text-decoration: none;
+}
+.platformContainer .imagePlatform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+}
+.platformContainer .imagePlatform img {
+  flex-shrink: 1;
+  min-width: 100%;
+  min-height: 100%;
+}
+.platformContainer .btn {
+  font-family: Roboto, sans-serif;
+  font-weight: 0;
+  font-size: 14px;
+  color: #fff;
+  background-color: #0066CC;
+  padding: 10px 30px;
+  border: 2px solid #0066cc;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  border-radius: 50px;
+  transition: 429ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+.platformContainer .btn:hover {
+  transition: 429ms;
+  padding: 10px 50px;
+  transform: translateY(0px);
+  background-color: #fff;
+  color: #0066cc;
+  border: solid 2px #0066cc;
+}
+.platformContainer .infoPlatform p {
+  font-size: 25px;
+}
+@media screen and (max-width: 768px) {
+  .platformContainer .infoPlatform p {
+    font-size: 15px;
+  }
+}
+
+.streamingContainer {
+  background-color: #010D26;
+  position: relative;
+  z-index: 0;
+  width: 90vw;
+  height: 550px;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 2rem;
+}
+.streamingContainer .titleStreaming {
+  color: white;
+  background-color: #F26938;
+  border-radius: 40px;
+  padding: 10px;
+}
+.streamingContainer::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: #399953;
+  background-repeat: no-repeat;
+  background-size: 50% 50%, 50% 50%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+  animation: rotate 4s linear infinite;
+}
+.streamingContainer::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 6px;
+  top: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  background-color: #010D26;
+  border-radius: 5px;
+  animation: opacityChange 3s infinite alternate;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.card {
+  background-color: #010D26;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.card .timeUpdate {
+  box-shadow: -4px 2px 24px 1px rgba(0, 0, 0, 0.33);
+  display: inline;
+  background-color: #F26938;
+  font-size: 20px;
+  border-radius: 50px;
+  padding: 5px;
+}
+.card .containerNew {
+  padding: 10px;
+  border-bottom: 2px dashed #ff6550;
+  margin-bottom: 10px;
+}
+
+.contactContainer {
+  height: 850px;
+}
+.contactContainer img:hover {
+  transform: scale(1.4);
+}
+
+/* Eliminando todos los padding y los margin que vienen por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #011640;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
+footer,
+.navbar {
+  background-color: #010D26;
+}
+
+.navbar-title {
+  font-size: 22px;
+  font-family: "Roboto";
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=mainstyle.css.map */

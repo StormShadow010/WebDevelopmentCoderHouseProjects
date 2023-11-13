@@ -1,0 +1,88 @@
+/* Fuente Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+//Varibles
+$color-mainbackground: #011640;
+$color-secondarybackground: #010D26;
+$color-buttonbackground: #F26938;
+
+
+// Mixin
+@mixin borderRadiusCreatorPadding($radiosBorder, $paddingBorder) {
+    border-radius: $radiosBorder;
+    padding: $paddingBorder;
+}
+
+.platformContainer {
+    background-color: $color-secondarybackground;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+    margin: 10px;
+    min-height: 80vh;
+
+    a {
+        text-decoration: none;
+    }
+
+    .imagePlatform {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 300px;
+        height: 300px;
+        padding: 20px;
+
+        img {
+            flex-shrink: 1;
+            min-width: 100%;
+            min-height: 100%;
+        }
+    }
+
+    .btn {
+
+        font-family: Roboto, sans-serif;
+        font-weight: 0;
+        font-size: 14px;
+        color: #fff;
+        background-color: #0066CC;
+        padding: 10px 30px;
+        border: 2px solid #0066cc;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+        border-radius: 50px;
+        transition: 429ms;
+        transform: translateY(0);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover {
+            transition: 429ms;
+            padding: 10px 50px;
+            transform: translateY(-0px);
+            background-color: #fff;
+            color: #0066cc;
+            border: solid 2px #0066cc;
+        }
+    }
+
+
+    .infoPlatform {
+        p {
+            font-size: 25px;
+        }
+    }
+
+
+    @media screen and (max-width:768px) {
+        .infoPlatform {
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+
+
+
+}

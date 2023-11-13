@@ -1,0 +1,10 @@
+.contactContainer {
+    height: 850px;
+
+    img {
+        &:hover {
+            transform: scale(1.4);
+        }
+    }
+
+}

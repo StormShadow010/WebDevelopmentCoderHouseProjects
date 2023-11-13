@@ -1,0 +1,65 @@
+/* Fuente Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+//Varibles
+$color-mainbackground: #011640;
+$color-secondarybackground: #010D26;
+$color-titlebackground: #F26938;
+
+// Mixin
+@mixin borderRadiusCreatorPadding($radiosBorder, $paddingBorder) {
+    border-radius: $radiosBorder;
+    padding: $paddingBorder;
+}
+
+.streamingContainer {
+    background-color: $color-secondarybackground;
+    position: relative;
+    z-index: 0;
+    width: 90vw;
+    height: 550px;
+    overflow: hidden;
+    @include borderRadiusCreatorPadding(10px, 2rem);
+
+    .titleStreaming {
+        color: white;
+        background-color: #F26938;
+        @include borderRadiusCreatorPadding(40px, 10px);
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -2;
+        left: -50%;
+        top: -50%;
+        width: 200%;
+        height: 200%;
+        background-color: #399953;
+        background-repeat: no-repeat;
+        background-size: 50% 50%, 50% 50%;
+        background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+        background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+        animation: rotate 4s linear infinite;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        left: 6px;
+        top: 6px;
+        width: calc(100% - 12px);
+        height: calc(100% - 12px);
+        background-color: $color-secondarybackground;
+        border-radius: 5px;
+        animation: opacityChange 3s infinite alternate;
+    }
+}
+
+
+@keyframes rotate {
+    100% {
+        transform: rotate(1turn);
+    }
+}
